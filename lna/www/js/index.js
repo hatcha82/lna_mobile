@@ -36,7 +36,7 @@ function onDeviceReady() {
     // if (navigator.connection.type == Connection.NONE) {
     //      navigator.notification.alert('인터넷 연결이 필요합니다.');
     // } else {
-//
+//      
         var ref = cordova.InAppBrowser.open('https://www.lnashoes.com', '_blank', 'location=no,toolbar=no');
     // }
 }
