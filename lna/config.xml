@@ -7,9 +7,10 @@
     <author email="hatcha82@gmail.com" href="http://cordova.io">
           LNA korea Online Platform
     </author>
-    <content src="index.html" />
+    <content src="https://lnashoes.com" />
     <access origin="*" />
     <access origin="https://lnashoes.com" subdomains="true" />    
+    <allow-navigation href="https://*.lnashoes.com/*" /> 
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -17,6 +18,13 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <icon src="res/icon/logo.png" />
+    <icon src="res/icon/logo.png" platform="ios" width="57" height="57" density="mdpi" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="BackgroundColor" value="0xffffffff"/>
+    <preference name="AllowBackForwardNavigationGestures" value="true" />
     <platform name="android">
         <allow-intent href="market:*" />
         <!-- <resource-file src="resources/android/xml/network_security_config.xml" target="app/src/main/res/xml/network_security_config.xml" />
@@ -38,7 +46,51 @@
         <splash density="port-xxxhdpi" src="res/screen/android/splash-port-xxxhdpi.jpg" />
     </platform>
     <platform name="ios">
+        
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <allow-intent href="http://*/*" />
+        <allow-intent href="https://*/*" />
+        <allow-intent href="tel:*" />
+        <allow-intent href="sms:*" />
+        <allow-intent href="mailto:*" />
+        <allow-intent href="geo:*" />
+
+        <!-- iOS 8.0+ -->
+        <!-- iPhone 6 Plus  -->
+        <icon src="res/ios/icon-60@3x.png" width="180" height="180" />
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+        <icon src="res/ios/icon-60@2x.png" width="60" height="60" />
+        <icon src="res/ios/icon-60@2x.png" width="120" height="120" />
+        <!-- iPad -->
+        <icon src="res/ios/icon-76@2x.png" width="76" height="76" />
+        <icon src="res/ios/icon-76@2x.png" width="152" height="152" />
+        <!-- Spotlight Icon -->
+        <icon src="res/ios/icon-40@2x.png" width="40" height="40" />
+        <icon src="res/ios/icon-40@2x.png" width="80" height="80" />
+        <!-- iOS 6.1 -->
+        <!-- iPhone / iPod Touch -->
+        <icon src="res/ios/icon.png" width="57" height="57" />
+        <icon src="res/ios/icon@2x.png" width="114" height="114" />
+        <!-- iPad -->
+        <icon src="res/ios/icon-72@2x.png" width="72" height="72" />
+        <icon src="res/ios/icon-72@2x.png" width="144" height="144" />
+        
+        <!-- iPhone Spotlight and Settings Icon -->
+        <icon src="res/ios/icon-small.png" width="29" height="29" />
+        <icon src="res/ios/icon-small@2x.png" width="58" height="58" />
+        <icon src="res/ios/icon-small@3x.png" width="87" height="87" />
+        <!-- iPad Spotlight and Settings Icon -->
+        <icon src="res/ios/icon-small-50.png" width="50" height="50" />
+        <icon src="res/ios/icon-small-50.png" width="100" height="100" />
+        <!-- iPad Pro -->
+        <icon src="res/ios/icon-83.5@2x.png" width="167" height="167" />
+        <custom-config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
+            <true/>
+        </custom-config-file>
+        <custom-config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
+            <false/>
+        </custom-config-file>
     </platform>
 </widget>

@@ -32,11 +32,19 @@ function onDeviceReady() {
         }
     }, false);
   
+
+
+    var target = '_self';
+    
+    var url ='https://www.lnashoes.com';
+
+    var ref = cordova.InAppBrowser.open(url, target, 'location=no,toolbar=no,usewkwebview=yes');
+
     // Cordova is now initialized. Have fun!
     // if (navigator.connection.type == Connection.NONE) {
     //      navigator.notification.alert('인터넷 연결이 필요합니다.');
     // } else {
 //      
-        var ref = cordova.InAppBrowser.open('https://www.lnashoes.com', '_blank', 'location=no,toolbar=no');
+        
     // }
 }
